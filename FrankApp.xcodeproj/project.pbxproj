@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08EA4CF501348C9D16FF95A9 /* Pods_FrankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */; };
+		22DADA4DAC13AF3D11710FE7 /* Pods_FrankApp_FrankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087690FD40C8E0145005D051 /* Pods_FrankApp_FrankAppUITests.framework */; };
+		EF85167623C74601008B2B3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167523C74601008B2B3B /* AppDelegate.m */; };
+		EF85167923C74601008B2B3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167823C74601008B2B3B /* SceneDelegate.m */; };
+		EF85167C23C74601008B2B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167B23C74601008B2B3B /* ViewController.m */; };
+		EF85167F23C74601008B2B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF85167D23C74601008B2B3B /* Main.storyboard */; };
+		EF85168123C74606008B2B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF85168023C74606008B2B3B /* Assets.xcassets */; };
+		EF85168423C74606008B2B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF85168223C74606008B2B3B /* LaunchScreen.storyboard */; };
+		EF85168723C74606008B2B3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85168623C74606008B2B3B /* main.m */; };
+		EF85169123C74607008B2B3B /* FrankAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85169023C74607008B2B3B /* FrankAppTests.m */; };
+		EF85169C23C74607008B2B3B /* FrankAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85169B23C74607008B2B3B /* FrankAppUITests.m */; };
+		EF8516AC23C8798B008B2B3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */; };
+		EF8516AD23C8798B008B2B3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */; };
+		EF8516AE23C8798B008B2B3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */; };
+		F8DF5C27122244633A88719B /* Pods_FrankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E91F99484286DF5DA5E15E9 /* Pods_FrankApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF85168D23C74607008B2B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF85166923C74601008B2B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF85167023C74601008B2B3B;
+			remoteInfo = FrankApp;
+		};
+		EF85169823C74607008B2B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF85166923C74601008B2B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF85167023C74601008B2B3B;
+			remoteInfo = FrankApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043980CDADDF3EB56BA4392F /* Pods-FrankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankApp.debug.xcconfig"; path = "Target Support Files/Pods-FrankApp/Pods-FrankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		087690FD40C8E0145005D051 /* Pods_FrankApp_FrankAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankApp_FrankAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16DEAF1B0D28042D846303 /* Pods-FrankApp-FrankAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankApp-FrankAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FrankApp-FrankAppUITests/Pods-FrankApp-FrankAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		328F817B1BB7D164B7135654 /* Pods-FrankApp-FrankAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankApp-FrankAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FrankApp-FrankAppUITests/Pods-FrankApp-FrankAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E91F99484286DF5DA5E15E9 /* Pods_FrankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A400770C354B2EA222265 /* Pods-FrankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FrankAppTests/Pods-FrankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF2E01F7352D2A52F4AEB53 /* Pods-FrankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankApp.release.xcconfig"; path = "Target Support Files/Pods-FrankApp/Pods-FrankApp.release.xcconfig"; sourceTree = "<group>"; };
+		EE386D9E881F58BC712ACBE3 /* Pods-FrankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankAppTests.release.xcconfig"; path = "Target Support Files/Pods-FrankAppTests/Pods-FrankAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF85167123C74601008B2B3B /* FrankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF85167423C74601008B2B3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF85167523C74601008B2B3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF85167723C74601008B2B3B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EF85167823C74601008B2B3B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EF85167A23C74601008B2B3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF85167B23C74601008B2B3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF85167E23C74601008B2B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF85168023C74606008B2B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF85168323C74606008B2B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF85168523C74606008B2B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF85168623C74606008B2B3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF85168C23C74607008B2B3B /* FrankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF85169023C74607008B2B3B /* FrankAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrankAppTests.m; sourceTree = "<group>"; };
+		EF85169223C74607008B2B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF85169723C74607008B2B3B /* FrankAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrankAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF85169B23C74607008B2B3B /* FrankAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrankAppUITests.m; sourceTree = "<group>"; };
+		EF85169D23C74607008B2B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF85166E23C74601008B2B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DF5C27122244633A88719B /* Pods_FrankApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85168923C74607008B2B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EA4CF501348C9D16FF95A9 /* Pods_FrankAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85169423C74607008B2B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DADA4DAC13AF3D11710FE7 /* Pods_FrankApp_FrankAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68C845E2B829B4C665CE6BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				043980CDADDF3EB56BA4392F /* Pods-FrankApp.debug.xcconfig */,
+				DBF2E01F7352D2A52F4AEB53 /* Pods-FrankApp.release.xcconfig */,
+				328F817B1BB7D164B7135654 /* Pods-FrankApp-FrankAppUITests.debug.xcconfig */,
+				1A16DEAF1B0D28042D846303 /* Pods-FrankApp-FrankAppUITests.release.xcconfig */,
+				8E7A400770C354B2EA222265 /* Pods-FrankAppTests.debug.xcconfig */,
+				EE386D9E881F58BC712ACBE3 /* Pods-FrankAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A975CF0230878CE4AEB80B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E91F99484286DF5DA5E15E9 /* Pods_FrankApp.framework */,
+				087690FD40C8E0145005D051 /* Pods_FrankApp_FrankAppUITests.framework */,
+				D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF85166823C74601008B2B3B = {
+			isa = PBXGroup;
+			children = (
+				EF85167323C74601008B2B3B /* FrankApp */,
+				EF85168F23C74607008B2B3B /* FrankAppTests */,
+				EF85169A23C74607008B2B3B /* FrankAppUITests */,
+				EF85167223C74601008B2B3B /* Products */,
+				68C845E2B829B4C665CE6BAB /* Pods */,
+				A975CF0230878CE4AEB80B11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF85167223C74601008B2B3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF85167123C74601008B2B3B /* FrankApp.app */,
+				EF85168C23C74607008B2B3B /* FrankAppTests.xctest */,
+				EF85169723C74607008B2B3B /* FrankAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF85167323C74601008B2B3B /* FrankApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF85167423C74601008B2B3B /* AppDelegate.h */,
+				EF85167523C74601008B2B3B /* AppDelegate.m */,
+				EF85167723C74601008B2B3B /* SceneDelegate.h */,
+				EF85167823C74601008B2B3B /* SceneDelegate.m */,
+				EF85167A23C74601008B2B3B /* ViewController.h */,
+				EF85167B23C74601008B2B3B /* ViewController.m */,
+				EF85167D23C74601008B2B3B /* Main.storyboard */,
+				EF85168023C74606008B2B3B /* Assets.xcassets */,
+				EF85168223C74606008B2B3B /* LaunchScreen.storyboard */,
+				EF85168523C74606008B2B3B /* Info.plist */,
+				EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */,
+				EF85168623C74606008B2B3B /* main.m */,
+			);
+			path = FrankApp;
+			sourceTree = "<group>";
+		};
+		EF85168F23C74607008B2B3B /* FrankAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF85169023C74607008B2B3B /* FrankAppTests.m */,
+				EF85169223C74607008B2B3B /* Info.plist */,
+			);
+			path = FrankAppTests;
+			sourceTree = "<group>";
+		};
+		EF85169A23C74607008B2B3B /* FrankAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF85169B23C74607008B2B3B /* FrankAppUITests.m */,
+				EF85169D23C74607008B2B3B /* Info.plist */,
+			);
+			path = FrankAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF85167023C74601008B2B3B /* FrankApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8516A023C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankApp" */;
+			buildPhases = (
+				9D4BEC3925C741C7D4B19925 /* [CP] Check Pods Manifest.lock */,
+				EF85166D23C74601008B2B3B /* Sources */,
+				EF85166E23C74601008B2B3B /* Frameworks */,
+				EF85166F23C74601008B2B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrankApp;
+			productName = FrankApp;
+			productReference = EF85167123C74601008B2B3B /* FrankApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF85168B23C74607008B2B3B /* FrankAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8516A323C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankAppTests" */;
+			buildPhases = (
+				A81ECD0BFED3ADD0B3D8B107 /* [CP] Check Pods Manifest.lock */,
+				EF85168823C74607008B2B3B /* Sources */,
+				EF85168923C74607008B2B3B /* Frameworks */,
+				EF85168A23C74607008B2B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF85168E23C74607008B2B3B /* PBXTargetDependency */,
+			);
+			name = FrankAppTests;
+			productName = FrankAppTests;
+			productReference = EF85168C23C74607008B2B3B /* FrankAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF85169623C74607008B2B3B /* FrankAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8516A623C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankAppUITests" */;
+			buildPhases = (
+				3F1E3D60E353A8A541EDBA77 /* [CP] Check Pods Manifest.lock */,
+				EF85169323C74607008B2B3B /* Sources */,
+				EF85169423C74607008B2B3B /* Frameworks */,
+				EF85169523C74607008B2B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF85169923C74607008B2B3B /* PBXTargetDependency */,
+			);
+			name = FrankAppUITests;
+			productName = FrankAppUITests;
+			productReference = EF85169723C74607008B2B3B /* FrankAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF85166923C74601008B2B3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Henrik Frank";
+				TargetAttributes = {
+					EF85167023C74601008B2B3B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					EF85168B23C74607008B2B3B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = EF85167023C74601008B2B3B;
+					};
+					EF85169623C74607008B2B3B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = EF85167023C74601008B2B3B;
+					};
+				};
+			};
+			buildConfigurationList = EF85166C23C74601008B2B3B /* Build configuration list for PBXProject "FrankApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF85166823C74601008B2B3B;
+			productRefGroup = EF85167223C74601008B2B3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF85167023C74601008B2B3B /* FrankApp */,
+				EF85168B23C74607008B2B3B /* FrankAppTests */,
+				EF85169623C74607008B2B3B /* FrankAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF85166F23C74601008B2B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF85168423C74606008B2B3B /* LaunchScreen.storyboard in Resources */,
+				EF8516AC23C8798B008B2B3B /* GoogleService-Info.plist in Resources */,
+				EF85168123C74606008B2B3B /* Assets.xcassets in Resources */,
+				EF85167F23C74601008B2B3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85168A23C74607008B2B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8516AD23C8798B008B2B3B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85169523C74607008B2B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8516AE23C8798B008B2B3B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F1E3D60E353A8A541EDBA77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrankApp-FrankAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4BEC3925C741C7D4B19925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrankApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81ECD0BFED3ADD0B3D8B107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrankAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF85166D23C74601008B2B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF85167C23C74601008B2B3B /* ViewController.m in Sources */,
+				EF85167623C74601008B2B3B /* AppDelegate.m in Sources */,
+				EF85168723C74606008B2B3B /* main.m in Sources */,
+				EF85167923C74601008B2B3B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85168823C74607008B2B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF85169123C74607008B2B3B /* FrankAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF85169323C74607008B2B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF85169C23C74607008B2B3B /* FrankAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF85168E23C74607008B2B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF85167023C74601008B2B3B /* FrankApp */;
+			targetProxy = EF85168D23C74607008B2B3B /* PBXContainerItemProxy */;
+		};
+		EF85169923C74607008B2B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF85167023C74601008B2B3B /* FrankApp */;
+			targetProxy = EF85169823C74607008B2B3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF85167D23C74601008B2B3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF85167E23C74601008B2B3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF85168223C74606008B2B3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF85168323C74606008B2B3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF85169E23C74607008B2B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF85169F23C74607008B2B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF8516A123C74607008B2B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043980CDADDF3EB56BA4392F /* Pods-FrankApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF8516A223C74607008B2B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF2E01F7352D2A52F4AEB53 /* Pods-FrankApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF8516A423C74607008B2B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7A400770C354B2EA222265 /* Pods-FrankAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrankApp.app/FrankApp";
+			};
+			name = Debug;
+		};
+		EF8516A523C74607008B2B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE386D9E881F58BC712ACBE3 /* Pods-FrankAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrankApp.app/FrankApp";
+			};
+			name = Release;
+		};
+		EF8516A723C74607008B2B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328F817B1BB7D164B7135654 /* Pods-FrankApp-FrankAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrankApp;
+			};
+			name = Debug;
+		};
+		EF8516A823C74607008B2B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A16DEAF1B0D28042D846303 /* Pods-FrankApp-FrankAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrankAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrankApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF85166C23C74601008B2B3B /* Build configuration list for PBXProject "FrankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF85169E23C74607008B2B3B /* Debug */,
+				EF85169F23C74607008B2B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8516A023C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8516A123C74607008B2B3B /* Debug */,
+				EF8516A223C74607008B2B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8516A323C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8516A423C74607008B2B3B /* Debug */,
+				EF8516A523C74607008B2B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8516A623C74607008B2B3B /* Build configuration list for PBXNativeTarget "FrankAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8516A723C74607008B2B3B /* Debug */,
+				EF8516A823C74607008B2B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF85166923C74601008B2B3B /* Project object */;
+}
