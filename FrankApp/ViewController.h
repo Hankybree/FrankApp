@@ -11,8 +11,10 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *frankLabel;
+@property (weak, nonatomic) IBOutlet UILabel *darkModeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionText;
 
-- (IBAction)darkModeSlider:(id)sender;
+- (IBAction)darkModeSwitch:(id)sender;
 
 @end
 
