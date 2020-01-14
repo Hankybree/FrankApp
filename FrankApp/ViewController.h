@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *frankLabel;
 @property (weak, nonatomic) IBOutlet UILabel *darkModeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
+@property (weak, nonatomic) IBOutlet UISwitch *darkModeSwitch;
 
 - (IBAction)darkModeSwitch:(id)sender;
 

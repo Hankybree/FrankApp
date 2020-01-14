@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,87 +12,82 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wHF-Yx-MeK">
-                                <rect key="frame" x="29" y="71" width="51" height="31"/>
+                                <rect key="frame" x="20" y="27" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="darkModeSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="zg5-9m-ptd"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwT-vb-bRd">
-                                <rect key="frame" x="160.5" y="71" width="93" height="68"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Darkmode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7Z-bv-REj">
-                                <rect key="frame" x="20" y="118" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frankpic" translatesAutoresizingMaskIntoConstraints="NO" id="q3G-ZO-jwL">
-                                <rect key="frame" x="12" y="164.5" width="390" height="249.5"/>
+                                <rect key="frame" x="20" y="102" width="280" height="263"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="249.5" id="Oi0-qv-wuz"/>
+                                    <constraint firstAttribute="height" constant="263" id="nfH-UE-Hh3"/>
                                 </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99O-RC-w5S">
-                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="B2q-Of-ob4"/>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbC-Pd-26E">
-                                <rect key="frame" x="20" y="452" width="374" height="202"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbC-Pd-26E">
+                                <rect key="frame" x="20" y="398" width="280" height="24"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Hejhej, jag heter Frank jag är en tank, LOREM IPSUM IPSUM LOREM FUCKING LOREM LOREM IPSUM, ÖH. LOREM LOREM IPSUM: IPSUM!!!!!! Det var en raplåt jag skrev när jag var skev. Jag åt en skatt och blev en katt. Nu jävlar har jag drev! Det där var en limrick yo Im creative like that. Im Frank the FOCKEN tank (drop the mic)!</string>
+                                <string key="text">Hejhej, jag heter Frank jag är en tank, LOREM IPSUM IPSUM LOREM FUCKING LOREM LOREM IPSUM, ÖH. LOREM LOREM IPSUM: IPSUM!!!!!! Det var en raplåt jag skrev när jag var skev. Jag åt en skatt och blev en katt. Nu jävlar har jag drev! Det där var en limrick yo Im creative like that. Im Frank the FOCKEN tank (drop the mic)! </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Darkmode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7Z-bv-REj">
+                                <rect key="frame" x="20" y="66" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwT-vb-bRd">
+                                <rect key="frame" x="114" y="9" width="92.5" height="67"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wHF-Yx-MeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="2VH-1Q-9Ap"/>
-                            <constraint firstItem="x7Z-bv-REj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jA-Ex-gqb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TwT-vb-bRd" secondAttribute="bottom" constant="723" id="Lnv-JX-dnM"/>
-                            <constraint firstItem="dbC-Pd-26E" firstAttribute="top" secondItem="q3G-ZO-jwL" secondAttribute="bottom" constant="8" id="MB7-py-V1B"/>
-                            <constraint firstItem="dbC-Pd-26E" firstAttribute="leading" secondItem="x7Z-bv-REj" secondAttribute="leading" id="U9z-3v-Dpa"/>
-                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="centerX" secondItem="TwT-vb-bRd" secondAttribute="centerX" id="daC-GW-7IZ"/>
-                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="centerX" secondItem="dbC-Pd-26E" secondAttribute="centerX" id="gym-Pb-c9m"/>
-                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="top" secondItem="TwT-vb-bRd" secondAttribute="bottom" constant="25.5" id="oGA-0r-avt"/>
-                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="qNz-tC-Jzr"/>
-                            <constraint firstItem="TwT-vb-bRd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qTK-AR-Fgn"/>
-                            <constraint firstItem="wHF-Yx-MeK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="rDN-Wk-2W7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x7Z-bv-REj" secondAttribute="bottom" constant="723" id="rfv-Ii-kNQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dbC-Pd-26E" secondAttribute="bottom" constant="238" id="sAV-0F-yrA"/>
-                            <constraint firstItem="TwT-vb-bRd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="u7P-j8-FMM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wHF-Yx-MeK" secondAttribute="bottom" constant="760" id="uJK-Kp-hvk"/>
-                            <constraint firstItem="x7Z-bv-REj" firstAttribute="top" secondItem="wHF-Yx-MeK" secondAttribute="bottom" constant="16" id="yuj-hW-7VE"/>
+                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="2Tw-At-hg0"/>
+                            <constraint firstAttribute="trailing" secondItem="q3G-ZO-jwL" secondAttribute="trailing" constant="20" symbolic="YES" id="69V-lI-qRX"/>
+                            <constraint firstItem="TwT-vb-bRd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6TZ-NP-J1j"/>
+                            <constraint firstItem="x7Z-bv-REj" firstAttribute="leading" secondItem="wHF-Yx-MeK" secondAttribute="leading" id="7Hg-jb-JY3"/>
+                            <constraint firstItem="TwT-vb-bRd" firstAttribute="leading" secondItem="x7Z-bv-REj" secondAttribute="trailing" constant="13" id="8Aj-50-oDZ"/>
+                            <constraint firstItem="wHF-Yx-MeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8QE-KW-noD"/>
+                            <constraint firstItem="x7Z-bv-REj" firstAttribute="top" secondItem="wHF-Yx-MeK" secondAttribute="bottom" constant="8" id="HY7-Dw-UcU"/>
+                            <constraint firstItem="dbC-Pd-26E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I14-sg-5Pj"/>
+                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="top" secondItem="TwT-vb-bRd" secondAttribute="bottom" constant="26" id="JfS-Kq-gfy"/>
+                            <constraint firstItem="dbC-Pd-26E" firstAttribute="top" secondItem="q3G-ZO-jwL" secondAttribute="bottom" constant="33" id="JgT-Fy-zdy"/>
+                            <constraint firstItem="TwT-vb-bRd" firstAttribute="centerY" secondItem="wHF-Yx-MeK" secondAttribute="centerY" id="Of7-ik-ti4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbC-Pd-26E" secondAttribute="trailing" constant="20" id="Tnp-gR-1gd"/>
+                            <constraint firstItem="dbC-Pd-26E" firstAttribute="leading" secondItem="x7Z-bv-REj" secondAttribute="leading" id="WI6-bB-UXZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dbC-Pd-26E" secondAttribute="bottom" constant="58" id="WIZ-I2-hJ6"/>
+                            <constraint firstItem="TwT-vb-bRd" firstAttribute="centerX" secondItem="q3G-ZO-jwL" secondAttribute="centerX" id="hwm-kC-WSQ"/>
+                            <constraint firstItem="wHF-Yx-MeK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="mUG-KG-Scb"/>
+                            <constraint firstItem="q3G-ZO-jwL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qpc-Pe-xCZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="darkModeLabel" destination="x7Z-bv-REj" id="KIr-ee-vsS"/>
+                        <outlet property="darkModeSwitch" destination="wHF-Yx-MeK" id="le5-Ob-ofW"/>
                         <outlet property="descriptionText" destination="dbC-Pd-26E" id="o5u-gr-Cr1"/>
                         <outlet property="frankLabel" destination="TwT-vb-bRd" id="PFH-Wp-IgQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="112.5"/>
+            <point key="canvasLocation" x="-66.666666666666671" y="111.83035714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z0W-AJ-keF">
             <objects>
                 <viewController id="R7z-iV-kwV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxM-AO-GDp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3xU-MG-Tet"/>

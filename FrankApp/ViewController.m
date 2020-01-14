@@ -19,10 +19,21 @@ UIColor *darkModeBackgroundColor;
 UIColor *standardTextColor;
 UIColor *darkModeTextColor;
 
+NSUserDefaults *settings;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setColorValues];
+    
+    settings = [NSUserDefaults standardUserDefaults];
+    
+    NSInteger darkModeSettings = [settings integerForKey:@"darkModeSettings"];
+    
+    if(darkModeSettings == 1) {
+        [self.darkModeSwitch setOn:YES];
+        [self toggleDarkMode];
+    }
 }
 -(UIStatusBarStyle)preferredStatusBarStyle {
     
@@ -44,6 +55,10 @@ UIColor *darkModeTextColor;
         self.descriptionText.textColor = standardTextColor;
         self.descriptionText.backgroundColor = standardBackgroundColor;
         
+        [settings setInteger:0 forKey:@"darkModeSettings"];
+        
+        [settings synchronize];
+        
         [self setNeedsStatusBarAppearanceUpdate];
         
     } else {
@@ -53,6 +68,10 @@ UIColor *darkModeTextColor;
         self.darkModeLabel.textColor = darkModeTextColor;
         self.descriptionText.textColor = darkModeTextColor;
         self.descriptionText.backgroundColor = darkModeBackgroundColor;
+        
+        [settings setInteger:1 forKey:@"darkModeSettings"];
+        
+        [settings synchronize];
         
         [self setNeedsStatusBarAppearanceUpdate];
         
