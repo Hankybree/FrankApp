@@ -20,6 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Use Firebase library to configure APIs
+    UITabBar.appearance.barTintColor = [UIColor blackColor];
+    UITabBar.appearance.tintColor = [UIColor whiteColor];
     [FIRApp configure];
     return YES;
 }

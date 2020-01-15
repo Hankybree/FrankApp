@@ -8,27 +8,43 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITabBarControllerDelegate>
 
 @end
 
 @implementation ViewController
 
-UIColor *standardBackgroundColor;
-UIColor *darkModeBackgroundColor;
-UIColor *standardTextColor;
-UIColor *darkModeTextColor;
+NSDictionary *colors;
 
 NSUserDefaults *settings;
+NSInteger darkModeSettings;
 
-- (void)viewDidLoad {
+UITabBarController *tabBarController;
+UITabBar *tabBar;
+
+-(void)viewDidLoad {
     [super viewDidLoad];
     
     [self setColorValues];
     
+    tabBarController = self.tabBarController;
+    tabBar = tabBarController.tabBar;
+    
     settings = [NSUserDefaults standardUserDefaults];
     
-    NSInteger darkModeSettings = [settings integerForKey:@"darkModeSettings"];
+    darkModeSettings = [settings integerForKey:@"darkModeSettings"];
+    
+    if(darkModeSettings == 1) {
+        [self.darkModeSwitch setOn:YES];
+        [self toggleDarkMode];
+    }
+}
+- (void)tabBarController:(UITabBarController *)tabBarController
+didSelectViewController:(UIViewController *)viewController {
+    
+    NSLog(@"Tab changed");
+    
+    darkModeSettings = [settings integerForKey:@"darkModeSettings"];
     
     if(darkModeSettings == 1) {
         [self.darkModeSwitch setOn:YES];
@@ -37,23 +53,26 @@ NSUserDefaults *settings;
 }
 -(UIStatusBarStyle)preferredStatusBarStyle {
     
-    if(self.view.backgroundColor == darkModeBackgroundColor) {
+    if(self.view.backgroundColor == colors[@"darkModeBackground"]) {
         return UIStatusBarStyleLightContent;
     }
     
     return UIStatusBarStyleDarkContent;
 }
-- (IBAction)darkModeSwitch:(id)sender {
+-(IBAction)darkModeSwitch:(id)sender {
     [self toggleDarkMode];
 }
 -(void)toggleDarkMode {
-    if(self.view.backgroundColor == darkModeBackgroundColor) {
+    if(self.view.backgroundColor == colors[@"darkModeBackground"]) {
         
-        self.view.backgroundColor = standardBackgroundColor;
-        self.frankLabel.textColor = standardTextColor;
-        self.darkModeLabel.textColor = standardTextColor;
-        self.descriptionText.textColor = standardTextColor;
-        self.descriptionText.backgroundColor = standardBackgroundColor;
+        self.view.backgroundColor = colors[@"standardBackground"];
+        self.frankLabel.textColor = colors[@"standardText"];
+        self.darkModeLabel.textColor = colors[@"standardText"];
+        self.descriptionText.textColor = colors[@"standardText"];
+        self.descriptionText.backgroundColor = colors[@"standardBackground"];
+        
+        tabBar.barTintColor = colors[@"standardTabBar"];
+        tabBar.tintColor = colors[@"standardTabBarItem"];
         
         [settings setInteger:0 forKey:@"darkModeSettings"];
         
@@ -63,11 +82,14 @@ NSUserDefaults *settings;
         
     } else {
         
-        self.view.backgroundColor = darkModeBackgroundColor;
-        self.frankLabel.textColor = darkModeTextColor;
-        self.darkModeLabel.textColor = darkModeTextColor;
-        self.descriptionText.textColor = darkModeTextColor;
-        self.descriptionText.backgroundColor = darkModeBackgroundColor;
+        self.view.backgroundColor = colors[@"darkModeBackground"];
+        self.frankLabel.textColor = colors[@"darkModeText"];
+        self.darkModeLabel.textColor = colors[@"darkModeText"];
+        self.descriptionText.textColor = colors[@"darkModeText"];
+        self.descriptionText.backgroundColor = colors[@"darkModeBackground"];
+        
+        tabBar.barTintColor = colors[@"darkModeTabBar"];
+        tabBar.tintColor = colors[@"darkModeTabBarItem"];
         
         [settings setInteger:1 forKey:@"darkModeSettings"];
         
@@ -78,9 +100,11 @@ NSUserDefaults *settings;
     }
 }
 -(void)setColorValues {
-    standardBackgroundColor = [UIColor whiteColor];
-    darkModeBackgroundColor = [UIColor darkGrayColor];
-    standardTextColor = [UIColor blackColor];
-    darkModeTextColor = [UIColor whiteColor];
+    colors = @{@"standardBackground": [UIColor whiteColor], @"standardText": [UIColor blackColor],
+               @"standardTabBar": [UIColor blackColor], @"standardTabBarItem": [UIColor whiteColor],
+               @"darkModeBackground": [UIColor darkGrayColor], @"darkModeText": [UIColor whiteColor],
+               @"darkModeTabBar": [UIColor blackColor], @"darkModeTabBarItem": [UIColor systemOrangeColor]
+               
+    };
 }
 @end
