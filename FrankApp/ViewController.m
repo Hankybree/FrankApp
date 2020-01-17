@@ -22,7 +22,8 @@ NSInteger darkModeSettings;
 UITabBarController *tabBarController;
 UITabBar *tabBar;
 
--(void)viewDidLoad {
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     [self setColorValues];
@@ -32,26 +33,13 @@ UITabBar *tabBar;
     
     settings = [NSUserDefaults standardUserDefaults];
     
-    darkModeSettings = [settings integerForKey:@"darkModeSettings"];
-    
-    if(darkModeSettings == 1) {
-        [self.darkModeSwitch setOn:YES];
-        [self toggleDarkMode];
-    }
+    [self loadDarkModeSettings];
 }
-- (void)tabBarController:(UITabBarController *)tabBarController
-didSelectViewController:(UIViewController *)viewController {
+- (void)viewWillAppear:(BOOL)animated {
     
-    NSLog(@"Tab changed");
-    
-    darkModeSettings = [settings integerForKey:@"darkModeSettings"];
-    
-    if(darkModeSettings == 1) {
-        [self.darkModeSwitch setOn:YES];
-        [self toggleDarkMode];
-    }
+    [self loadDarkModeSettings];
 }
--(UIStatusBarStyle)preferredStatusBarStyle {
+- (UIStatusBarStyle)preferredStatusBarStyle {
     
     if(self.view.backgroundColor == colors[@"darkModeBackground"]) {
         return UIStatusBarStyleLightContent;
@@ -59,11 +47,14 @@ didSelectViewController:(UIViewController *)viewController {
     
     return UIStatusBarStyleDarkContent;
 }
--(IBAction)darkModeSwitch:(id)sender {
+- (IBAction)darkModeSwitch:(id)sender {
+    
     [self toggleDarkMode];
 }
--(void)toggleDarkMode {
+- (void)toggleDarkMode {
     if(self.view.backgroundColor == colors[@"darkModeBackground"]) {
+        
+        [self.darkModeSwitch setOn:NO];
         
         self.view.backgroundColor = colors[@"standardBackground"];
         self.frankLabel.textColor = colors[@"standardText"];
@@ -78,9 +69,9 @@ didSelectViewController:(UIViewController *)viewController {
         
         [settings synchronize];
         
-        [self setNeedsStatusBarAppearanceUpdate];
-        
     } else {
+        
+        [self.darkModeSwitch setOn:YES];
         
         self.view.backgroundColor = colors[@"darkModeBackground"];
         self.frankLabel.textColor = colors[@"darkModeText"];
@@ -95,11 +86,46 @@ didSelectViewController:(UIViewController *)viewController {
         
         [settings synchronize];
         
-        [self setNeedsStatusBarAppearanceUpdate];
+    }
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+- (void)loadDarkModeSettings {
+    
+    darkModeSettings = [settings integerForKey:@"darkModeSettings"];
+    
+    if(darkModeSettings == 1) {
+        
+        [self.darkModeSwitch setOn:YES];
+        
+        self.view.backgroundColor = colors[@"darkModeBackground"];
+        self.frankLabel.textColor = colors[@"darkModeText"];
+        self.darkModeLabel.textColor = colors[@"darkModeText"];
+        self.descriptionText.textColor = colors[@"darkModeText"];
+        self.descriptionText.backgroundColor = colors[@"darkModeBackground"];
+        
+        tabBar.barTintColor = colors[@"darkModeTabBar"];
+        tabBar.tintColor = colors[@"darkModeTabBarItem"];
+        
+    } else {
+        
+        [self.darkModeSwitch setOn:NO];
+        
+        self.view.backgroundColor = colors[@"standardBackground"];
+        self.frankLabel.textColor = colors[@"standardText"];
+        self.darkModeLabel.textColor = colors[@"standardText"];
+        self.descriptionText.textColor = colors[@"standardText"];
+        self.descriptionText.backgroundColor = colors[@"standardBackground"];
+        
+        tabBar.barTintColor = colors[@"standardTabBar"];
+        tabBar.tintColor = colors[@"standardTabBarItem"];
         
     }
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
--(void)setColorValues {
+- (void)setColorValues {
     colors = @{@"standardBackground": [UIColor whiteColor], @"standardText": [UIColor blackColor],
                @"standardTabBar": [UIColor blackColor], @"standardTabBarItem": [UIColor whiteColor],
                @"darkModeBackground": [UIColor darkGrayColor], @"darkModeText": [UIColor whiteColor],

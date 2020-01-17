@@ -10,7 +10,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="EgP-Sa-3Bo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QwQ-pq-idR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="knY-vO-fXS" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="06G-sH-sLM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -23,13 +22,13 @@
                         <segue destination="L2I-9i-QTK" kind="relationship" relationship="viewControllers" id="ze4-Qw-WBq"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwQ-pq-idR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1507" y="-13"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -96,13 +95,13 @@
                         <outlet property="frankLabel" destination="TwT-vb-bRd" id="PFH-Wp-IgQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1959" y="717"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="1Ox-JT-rHy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zuH-Wz-xPz" sceneMemberID="firstResponder"/>
                 <viewController title="Portfolio" id="t1i-J4-GzH" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihh-Ol-MgY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -147,13 +146,13 @@
                         <outlet property="frankLabel" destination="yOe-gB-h0O" id="7Fn-oG-G8w"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuH-Wz-xPz" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1181" y="717"/>
         </scene>
         <!--Joke-->
         <scene sceneID="Ng9-9a-8vj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvm-yd-wAe" sceneMemberID="firstResponder"/>
                 <viewController title="Joke" id="L2I-9i-QTK" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zl-WV-cgr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -198,6 +197,7 @@
                         <outlet property="frankLabel" destination="9qp-pr-jEl" id="hMQ-c5-KXJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvm-yd-wAe" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-375" y="717"/>
         </scene>
