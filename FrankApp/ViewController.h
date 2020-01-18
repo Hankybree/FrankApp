@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *darkModeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
 @property (weak, nonatomic) IBOutlet UISwitch *darkModeSwitch;
+@property (weak, nonatomic) IBOutlet UITextView *resumeText;
 
 - (IBAction)darkModeSwitch:(id)sender;
 

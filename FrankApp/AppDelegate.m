@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     // Use Firebase library to configure APIs
     UITabBar.appearance.barTintColor = [UIColor blackColor];
-    UITabBar.appearance.tintColor = [UIColor whiteColor];
+    UITabBar.appearance.tintColor = [UIColor cyanColor];
     [FIRApp configure];
     return YES;
 }
