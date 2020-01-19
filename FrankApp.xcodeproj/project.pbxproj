@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		08EA4CF501348C9D16FF95A9 /* Pods_FrankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */; };
 		22DADA4DAC13AF3D11710FE7 /* Pods_FrankApp_FrankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087690FD40C8E0145005D051 /* Pods_FrankApp_FrankAppUITests.framework */; };
+		EF22ADEA23D4FC1500EE1473 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF22ADE923D4FC1500EE1473 /* AVFoundation.framework */; };
+		EF22ADF023D50BB700EE1473 /* joke1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF22ADEF23D50BB700EE1473 /* joke1.mp3 */; };
+		EF22ADF223D50BBE00EE1473 /* joke2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF22ADF123D50BBE00EE1473 /* joke2.mp3 */; };
+		EF22ADF423D50BC500EE1473 /* joke3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF22ADF323D50BC500EE1473 /* joke3.mp3 */; };
+		EF22ADF623D50BCB00EE1473 /* joke4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF22ADF523D50BCB00EE1473 /* joke4.mp3 */; };
 		EF85167623C74601008B2B3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167523C74601008B2B3B /* AppDelegate.m */; };
 		EF85167923C74601008B2B3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167823C74601008B2B3B /* SceneDelegate.m */; };
 		EF85167C23C74601008B2B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85167B23C74601008B2B3B /* ViewController.m */; };
@@ -51,6 +56,11 @@
 		D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF2E01F7352D2A52F4AEB53 /* Pods-FrankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankApp.release.xcconfig"; path = "Target Support Files/Pods-FrankApp/Pods-FrankApp.release.xcconfig"; sourceTree = "<group>"; };
 		EE386D9E881F58BC712ACBE3 /* Pods-FrankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankAppTests.release.xcconfig"; path = "Target Support Files/Pods-FrankAppTests/Pods-FrankAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF22ADE923D4FC1500EE1473 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF22ADEF23D50BB700EE1473 /* joke1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke1.mp3; sourceTree = "<group>"; };
+		EF22ADF123D50BBE00EE1473 /* joke2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke2.mp3; sourceTree = "<group>"; };
+		EF22ADF323D50BC500EE1473 /* joke3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke3.mp3; sourceTree = "<group>"; };
+		EF22ADF523D50BCB00EE1473 /* joke4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke4.mp3; sourceTree = "<group>"; };
 		EF85167123C74601008B2B3B /* FrankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF85167423C74601008B2B3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF85167523C74601008B2B3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF22ADEA23D4FC1500EE1473 /* AVFoundation.framework in Frameworks */,
 				F8DF5C27122244633A88719B /* Pods_FrankApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +127,7 @@
 		A975CF0230878CE4AEB80B11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF22ADE923D4FC1500EE1473 /* AVFoundation.framework */,
 				7E91F99484286DF5DA5E15E9 /* Pods_FrankApp.framework */,
 				087690FD40C8E0145005D051 /* Pods_FrankApp_FrankAppUITests.framework */,
 				D68FAA866C81C657F0C3E21D /* Pods_FrankAppTests.framework */,
@@ -157,6 +169,10 @@
 				EF85167D23C74601008B2B3B /* Main.storyboard */,
 				EF85168023C74606008B2B3B /* Assets.xcassets */,
 				EF85168223C74606008B2B3B /* LaunchScreen.storyboard */,
+				EF22ADEF23D50BB700EE1473 /* joke1.mp3 */,
+				EF22ADF123D50BBE00EE1473 /* joke2.mp3 */,
+				EF22ADF323D50BC500EE1473 /* joke3.mp3 */,
+				EF22ADF523D50BCB00EE1473 /* joke4.mp3 */,
 				EF85168523C74606008B2B3B /* Info.plist */,
 				EF8516AB23C8798B008B2B3B /* GoogleService-Info.plist */,
 				EF85168623C74606008B2B3B /* main.m */,
@@ -290,7 +306,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF22ADF223D50BBE00EE1473 /* joke2.mp3 in Resources */,
+				EF22ADF423D50BC500EE1473 /* joke3.mp3 in Resources */,
+				EF22ADF023D50BB700EE1473 /* joke1.mp3 in Resources */,
 				EF85168423C74606008B2B3B /* LaunchScreen.storyboard in Resources */,
+				EF22ADF623D50BCB00EE1473 /* joke4.mp3 in Resources */,
 				EF8516AC23C8798B008B2B3B /* GoogleService-Info.plist in Resources */,
 				EF85168123C74606008B2B3B /* Assets.xcassets in Resources */,
 				EF85167F23C74601008B2B3B /* Main.storyboard in Resources */,

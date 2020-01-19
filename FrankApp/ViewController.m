@@ -9,12 +9,15 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UITabBarControllerDelegate>
-
+{
+    AVAudioPlayer *player;
+}
 @end
 
 @implementation ViewController
 
 NSDictionary *colors;
+NSArray *jokes;
 
 NSUserDefaults *settings;
 NSInteger darkModeSettings;
@@ -27,6 +30,7 @@ UITabBar *tabBar;
     [super viewDidLoad];
     
     [self setColorValues];
+    [self setJokePaths];
     
     tabBarController = self.tabBarController;
     tabBar = tabBarController.tabBar;
@@ -50,6 +54,16 @@ UITabBar *tabBar;
 - (IBAction)darkModeSwitch:(id)sender {
     
     [self toggleDarkMode];
+}
+
+- (IBAction)generateJokeButton:(id)sender {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:jokes[arc4random_uniform(4)] ofType:@"mp3"];
+    NSURL *url = [NSURL URLWithString:path];
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:NULL];
+    
+    [player play];
+    
 }
 - (void)toggleDarkMode {
     if(self.view.backgroundColor == colors[@"darkModeBackground"]) {
@@ -107,6 +121,8 @@ UITabBar *tabBar;
     self.resumeText.textColor = colors[@"standardText"];
     self.resumeText.backgroundColor = colors[@"standardBackground"];
     self.resumeText.tintColor = colors[@"standardLink"];
+    self.jokeButtonOut.tintColor = colors[@"standardLink"];
+    self.jokeLabel.textColor = colors[@"standardText"];
     
     tabBar.barTintColor = colors[@"standardTabBar"];
     tabBar.tintColor = colors[@"standardTabBarItem"];
@@ -122,6 +138,8 @@ UITabBar *tabBar;
     self.resumeText.textColor = colors[@"darkModeText"];
     self.resumeText.backgroundColor = colors[@"darkModeBackground"];
     self.resumeText.tintColor = colors[@"darkModeTabBarItem"];
+    self.jokeButtonOut.tintColor = colors[@"darkModeTabBarItem"];
+    self.jokeLabel.textColor = colors[@"darkModeText"];
     
     tabBar.barTintColor = colors[@"darkModeTabBar"];
     tabBar.tintColor = colors[@"darkModeTabBarItem"];
@@ -135,5 +153,9 @@ UITabBar *tabBar;
                @"darkModeTabBar": [UIColor blackColor], @"darkModeTabBarItem": [UIColor systemOrangeColor]
                
     };
+}
+- (void)setJokePaths {
+    
+    jokes = @[@"joke1", @"joke2", @"joke3", @"joke4"];
 }
 @end

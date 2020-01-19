@@ -688,16 +688,34 @@ Cg
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glöm inte att skratta idag (:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ7-K3-FvU">
+                                <rect key="frame" x="38.5" y="431.5" width="337" height="33"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbp-o0-cqx">
+                                <rect key="frame" x="116.5" y="472.5" width="181" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="genereraSkämt();"/>
+                                <connections>
+                                    <action selector="generateJokeButton:" destination="L2I-9i-QTK" eventType="touchUpInside" id="2V9-mI-hBS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="iQ7-K3-FvU" firstAttribute="centerX" secondItem="2zl-WV-cgr" secondAttribute="centerX" id="8RO-X4-mtX"/>
+                            <constraint firstItem="Wbp-o0-cqx" firstAttribute="centerX" secondItem="iQ7-K3-FvU" secondAttribute="centerX" id="B0O-qF-b0O"/>
                             <constraint firstItem="X0w-bc-3mb" firstAttribute="top" secondItem="fuY-bd-HMM" secondAttribute="bottom" constant="8" id="FBx-qK-U5X"/>
                             <constraint firstItem="X0w-bc-3mb" firstAttribute="leading" secondItem="fuY-bd-HMM" secondAttribute="leading" id="KIR-pi-fwf"/>
                             <constraint firstItem="fuY-bd-HMM" firstAttribute="top" secondItem="oaO-I9-DCC" secondAttribute="top" constant="27" id="NhR-it-vY2"/>
                             <constraint firstItem="9qp-pr-jEl" firstAttribute="centerY" secondItem="fuY-bd-HMM" secondAttribute="centerY" id="ZRY-TY-9nm"/>
                             <constraint firstItem="9qp-pr-jEl" firstAttribute="leading" secondItem="X0w-bc-3mb" secondAttribute="trailing" constant="13" id="d2K-t8-ckL"/>
+                            <constraint firstItem="Wbp-o0-cqx" firstAttribute="top" secondItem="iQ7-K3-FvU" secondAttribute="bottom" constant="8" symbolic="YES" id="e7G-Ev-KBb"/>
                             <constraint firstItem="9qp-pr-jEl" firstAttribute="centerX" secondItem="oaO-I9-DCC" secondAttribute="centerX" id="lMN-DV-DjP"/>
                             <constraint firstItem="fuY-bd-HMM" firstAttribute="leading" secondItem="oaO-I9-DCC" secondAttribute="leading" constant="20" id="sNW-iq-FPl"/>
+                            <constraint firstItem="iQ7-K3-FvU" firstAttribute="centerY" secondItem="2zl-WV-cgr" secondAttribute="centerY" id="yne-AE-GBo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oaO-I9-DCC"/>
                     </view>
@@ -706,11 +724,13 @@ Cg
                         <outlet property="darkModeLabel" destination="X0w-bc-3mb" id="DaN-Yr-HTT"/>
                         <outlet property="darkModeSwitch" destination="fuY-bd-HMM" id="UfO-ow-Q0i"/>
                         <outlet property="frankLabel" destination="9qp-pr-jEl" id="hMQ-c5-KXJ"/>
+                        <outlet property="jokeButtonOut" destination="Wbp-o0-cqx" id="qmG-do-IQv"/>
+                        <outlet property="jokeLabel" destination="iQ7-K3-FvU" id="jeG-Qe-0Kp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvm-yd-wAe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="717"/>
+            <point key="canvasLocation" x="-376.80000000000001" y="716.49175412293857"/>
         </scene>
     </scenes>
     <resources>
