@@ -12,7 +12,7 @@
 
 @end
 
-@import Firebase;
+//@import Firebase;
 
 @implementation AppDelegate
 
@@ -22,7 +22,7 @@
     // Use Firebase library to configure APIs
     UITabBar.appearance.barTintColor = [UIColor blackColor];
     UITabBar.appearance.tintColor = [UIColor whiteColor];
-    [FIRApp configure];
+    //[FIRApp configure];
     return YES;
 }
 

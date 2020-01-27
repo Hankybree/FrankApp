@@ -209,7 +209,6 @@
 				EF85166D23C74601008B2B3B /* Sources */,
 				EF85166E23C74601008B2B3B /* Frameworks */,
 				EF85166F23C74601008B2B3B /* Resources */,
-				2A5D353068AB64CAC9144311 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,7 +246,6 @@
 				EF85169323C74607008B2B3B /* Sources */,
 				EF85169423C74607008B2B3B /* Frameworks */,
 				EF85169523C74607008B2B3B /* Resources */,
-				28FAB48C3624D4A1919A0E5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,40 +334,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		28FAB48C3624D4A1919A0E5F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrankApp-FrankAppUITests/Pods-FrankApp-FrankAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrankApp-FrankAppUITests/Pods-FrankApp-FrankAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrankApp-FrankAppUITests/Pods-FrankApp-FrankAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A5D353068AB64CAC9144311 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrankApp/Pods-FrankApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FrankApp/Pods-FrankApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrankApp/Pods-FrankApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3F1E3D60E353A8A541EDBA77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -9,9 +9,9 @@ target 'FrankApp' do
 
   # add pods for desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
-    pod 'Firebase/Analytics'
-    pod 'Firebase/Core'
-    pod 'Firebase/Storage'
+  #  pod 'Firebase/Analytics'
+  #  pod 'Firebase/Core'
+  #  pod 'Firebase/Storage'
 
   target 'FrankAppTests' do
     inherit! :search_paths
