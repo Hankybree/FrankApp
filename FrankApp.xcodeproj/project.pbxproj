@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,7 +61,7 @@
 		EF22ADF123D50BBE00EE1473 /* joke2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke2.mp3; sourceTree = "<group>"; };
 		EF22ADF323D50BC500EE1473 /* joke3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke3.mp3; sourceTree = "<group>"; };
 		EF22ADF523D50BCB00EE1473 /* joke4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = joke4.mp3; sourceTree = "<group>"; };
-		EF85167123C74601008B2B3B /* FrankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF85167123C74601008B2B3B /* HelloImFrank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloImFrank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF85167423C74601008B2B3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF85167523C74601008B2B3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF85167723C74601008B2B3B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		EF85167223C74601008B2B3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF85167123C74601008B2B3B /* FrankApp.app */,
+				EF85167123C74601008B2B3B /* HelloImFrank.app */,
 				EF85168C23C74607008B2B3B /* FrankAppTests.xctest */,
 				EF85169723C74607008B2B3B /* FrankAppUITests.xctest */,
 			);
@@ -216,7 +216,7 @@
 			);
 			name = FrankApp;
 			productName = FrankApp;
-			productReference = EF85167123C74601008B2B3B /* FrankApp.app */;
+			productReference = EF85167123C74601008B2B3B /* HelloImFrank.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EF85168B23C74607008B2B3B /* FrankAppTests */ = {
@@ -587,7 +587,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloImFrank;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -604,7 +604,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fhs.FrankApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloImFrank;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
